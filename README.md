@@ -20,5 +20,8 @@ Christian Rwema Gashumba
 - Runs in the background, providing the Process ID (PID) for easy management.
 
 
-
+### 2. Log Archival Script (archive_log.sh file)
+- Archives heart_rate_log.txt by renaming it with a timestamp
+- Generates a new log file name in the format heart_rate_log.txt_YYYYMMDD_HHMMSS
+- Keeps the log data organized and ready for backup
 
