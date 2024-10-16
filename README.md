@@ -25,3 +25,19 @@ Christian Rwema Gashumba
 - Generates a new log file name in the format heart_rate_log.txt_YYYYMMDD_HHMMSS
 - Keeps the log data organized and ready for backup
 
+### 3. Archival and Backup Script (backup_archives.sh)
+-Moves archived log files to a designated directory (archived_logs_group$
+-Uses SSH to back up files to a remote server.
+-Ensures that data is safely stored and easily accessible for future needs.
+
+
+## Challenges Faced
+- Handling Background Processes: Initially, managing background scripts and ensuring correct process IDs was tricky. We solved this by implementing process ID capture and display for easy monitoring.
+- Remote Backup Configuration: Setting up the SSH and scp for secure file transfer took time, but with thorough testing, we resolved connectivity issues and ensured smooth backups.
+
+## How to Run the Project
+1. Clone the repository and navigate to the project folder
+2. Make the scripts executable:
+   ```bash
+   chmod +x heart_rate_monitor.sh archive_log.sh backup_archives.sh
+
